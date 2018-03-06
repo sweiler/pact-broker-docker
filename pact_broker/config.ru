@@ -5,6 +5,8 @@ require_relative 'basic_auth'
 require_relative 'database_connection'
 require_relative 'passenger_config'
 
+ENV['TZ'] = 'Germany/Berlin'
+
 app = PactBroker::App.new do | config |
   config.logger = $logger
   config.database_connection = create_database_connection(config.logger)

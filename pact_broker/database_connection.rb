@@ -6,7 +6,8 @@ def create_database_connection(logger)
 
   credentials = {
     adapter: database_adapter,
-    database: 'pact-broker'
+    database: 'pact-broker.sqlite3',
+    encoding: 'utf8'
   }
 
   if ENV['PACT_BROKER_DATABASE_PORT'] =~ /^\d+$/
