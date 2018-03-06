@@ -1,0 +1,8 @@
+version: "2"
+
+services:
+  pact-broker:
+    build: .
+    ports:
+      - 3000:3000
+          
