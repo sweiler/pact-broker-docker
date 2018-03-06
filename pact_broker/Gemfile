@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
 
 gem "pact_broker"
-gem "passenger", "~>5.2"
+gem "unicorn", "~>5.1"
 gem "sqlite3", "~>1.3"
