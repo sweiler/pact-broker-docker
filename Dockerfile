@@ -11,4 +11,4 @@ RUN chown -R default /app/pact_broker
 USER default
 RUN bash -c "bundle install"
 
-CMD ["bundle exec passenger start"]
+CMD ["bash", "-c", "bundle exec passenger start"]
